@@ -33,25 +33,34 @@ console.log (" The clock is 12!")
 // 
 
 // En enkel kalkulator / Simple Calculator
+const calculator = document.querySelector
+("#calculator");
+console.log(calculator);
 
-const number1 = 10;
-const number2 = 5;
+calculator.addEventListener("click", function() {
+    const calculatorValue = document.querySelector
+    ("#calculator").value;
+    console.log(calculatorValue)
+ 
+
+const number1 = document.querySelector("#number1").value;
+const number2 = document.querySelector("#number2").value;
 let sum;
 
-if (number1 + number2) {
+if (calculatorValue ==="addition") {
     sum = number1 + number2
     console.log (sum)
-} else if (number1 - number2) {
+} else if (calculatorValue==="subtraction") {
     sum = number1 - number2
     console.log(sum)
-} else if (number1 * number2) {
+} else if (calculatorValue==="multiplication") {
     sum = number1 * number2
     console.log(sum)
-} else if (number1 / number2){
+} else if (calculatorValue==="division"){
     sum = number1 / number2
     console.log(sum)
 } else {
     sum = "Kan ikke kalkulere"
     console.log(sum)
 }
-
+})
